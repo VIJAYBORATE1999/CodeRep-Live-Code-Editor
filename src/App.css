@@ -1,0 +1,114 @@
+/* Footer CSS */
+
+.footer h5 {
+  color: lightcyan;
+}
+
+.footer .list-unstyled li {
+  padding: 5px 0px;
+  color: lightgray;
+}
+
+.footer .list-unstyled a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.footer .list-unstyled a:hover {
+  text-decoration: none;
+  color: lightblue;
+}
+
+/* Rating CSS*/
+
+.rating_container > input {
+  display: none;
+} /* Remove radio buttons */
+
+.rating_container > label:before {
+  content: "\f005"; /* Star */
+  margin: 4px;
+  font-size: 1.5em;
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+.rating_container > label {
+  color: #222222; /* Start color when not clicked */
+}
+
+.rating_container > input:checked ~ label {
+  color: #ffca08;
+} /* Set yellow color when star checked */
+
+.rating_container > input:hover ~ label {
+  color: #ffca08;
+} /* Set yellow color when star hover */
+
+/* Home CSS */
+
+.home .button-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px black;
+  border-radius: 50px !important;
+  transition: 1.25s ease-out;
+}
+
+.home .white-hover:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 2px #5ecab3;
+}
+
+.home .dark-hover:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 2px #df8484;
+}
+
+.home .designer-block {
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2rem solid black;
+  border-top: 2rem solid black;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+}
+
+.home .text-3d-white {
+  font-family: monospace;
+  font-size: calc(40px + 3vw);
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 3px 2px #b9b9b9,
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.55);
+  word-spacing: 0.25vw;
+}
+
+.home .reveal {
+  position: relative;
+  transform: translateY(125px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.home .reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* EditorOutput CSS */
+
+.editor_output .resizable_editor_output_card {
+  min-height: 170px;
+  height: 210px;
+  max-height: 580px;
+  min-width: 50px;
+  width: 100%;
+  max-width: 100%;
+  resize: both;
+  overflow: hidden;
+}
